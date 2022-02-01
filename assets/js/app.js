@@ -1,7 +1,7 @@
 // We need to import the CSS so that webpack will load it.
 // The MiniCssExtractPlugin is used to separate it out into
 // its own CSS file.
-import "../css/app.scss";
+import "../css/app.css";
 
 // webpack automatically bundles all modules in your
 // entry points. Those entry points can be configured
@@ -14,7 +14,7 @@ import "../css/app.scss";
 //
 import "phoenix_html";
 import { Socket } from "phoenix";
-import NProgress from "nprogress";
+import topbar from "../vendor/topbar"
 import { LiveSocket } from "phoenix_live_view";
 
 let csrfToken = document
@@ -22,8 +22,10 @@ let csrfToken = document
   .getAttribute("content");
 
 // Show progress bar on live navigation and form submits
-window.addEventListener("phx:page-loading-start", info => NProgress.start());
-window.addEventListener("phx:page-loading-stop", info => NProgress.done());
+topbar.config({barColors: {0: "#29d"}, shadowColor: "rgba(0, 0, 0, .3)"})
+window.addEventListener("phx:page-loading-start", info => topbar.show())
+window.addEventListener("phx:page-loading-stop", info => topbar.hide())
+
 
 function syntaxHighlight(json) {
   if (typeof json != "string") {

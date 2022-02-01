@@ -40,18 +40,19 @@ defmodule SbomPoc.MixProject do
   defp deps do
     [
       {:bcrypt_elixir, "~> 2.0"},
-      {:phoenix, "~> 1.5.3"},
+      {:phoenix, "~> 1.6", override: true},
       {:phoenix_ecto, "~> 4.1"},
-      {:ecto, ">= 3.4.4 and < 3.4.7"},
-      {:ecto_sql, ">= 3.4.4 and < 3.4.6"},
+      {:ecto, "~> 3.7"},
+      {:ecto_sql, "~> 3.7"},
       {:postgrex, ">= 0.0.0"},
-      {:phoenix_live_view, "~> 0.14.8"},
+      {:phoenix_live_view, "~> 0.16.4"},
       {:floki, ">= 0.0.0", only: :test},
-      {:phoenix_html, "~> 2.11"},
+      {:phoenix_html, "~> 3.0"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:phoenix_live_dashboard, "~> 0.3.6"},
-      {:telemetry_metrics, "~> 0.4"},
-      {:telemetry_poller, "~> 0.4"},
+      {:phoenix_live_dashboard, "~> 0.5"},
+      {:telemetry, "~> 0.4"},
+      {:telemetry_metrics, "~> 0.6"},
+      {:telemetry_poller, "~> 0.5"},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
@@ -59,6 +60,7 @@ defmodule SbomPoc.MixProject do
       {:nimble_publisher, "~> 0.1.0"},
       {:phx_gen_auth, "~> 0.7.0", only: [:dev], runtime: false},
       {:tortoise, "~> 0.9"},
+      {:esbuild, "~> 0.2", runtime: Mix.env() == :dev},
       {:sbom, git: "https://github.com/voltone/sbom"}
     ]
   end
@@ -74,6 +76,7 @@ defmodule SbomPoc.MixProject do
       setup: ["deps.get", "ecto.setup", "cmd npm install --prefix assets"],
       "ecto.setup": ["ecto.create", "ecto.migrate", "run priv/repo/seeds.exs"],
       "ecto.reset": ["ecto.drop", "ecto.setup"],
+      "assets.deploy": ["esbuild default --minify", "phx.digest"],
       test: ["ecto.create --quiet", "ecto.migrate --quiet", "test"]
     ]
   end
