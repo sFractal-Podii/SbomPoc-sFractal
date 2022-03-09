@@ -39,7 +39,7 @@ defmodule SbomPoc.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:bcrypt_elixir, "~> 2.0"},
+      {:bcrypt_elixir, "~> 3.0"},
       {:phoenix, "~> 1.6", override: true},
       {:phoenix_ecto, "~> 4.1"},
       {:ecto, "~> 3.7"},
