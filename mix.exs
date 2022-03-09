@@ -61,7 +61,7 @@ defmodule SbomPoc.MixProject do
       {:phx_gen_auth, "~> 0.7.0", only: [:dev], runtime: false},
       {:tortoise, "~> 0.9"},
       {:esbuild, "~> 0.2", runtime: Mix.env() == :dev},
-      {:sbom, git: "https://github.com/voltone/sbom"}
+      {:sbom, git: "https://github.com/voltone/sbom", runtime: false}
     ]
   end
 
