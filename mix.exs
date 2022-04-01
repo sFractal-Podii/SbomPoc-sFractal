@@ -4,11 +4,7 @@ defmodule SbomPoc.MixProject do
   def project do
     [
       app: :sbom_poc,
-<<<<<<< HEAD
-      version: "0.6.1",
-=======
       version: "0.6.2",
->>>>>>> develop
       elixir: "~> 1.11.2",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
