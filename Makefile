@@ -70,8 +70,9 @@ format: mix format ## Run formatting tools on the code
 .PHONY: sbom
 sbom: ## creates sbom for both  npm and hex dependancies
 	mix deps.get && mix sbom.cyclonedx -o elixir_bom.xml
-	cd assets/  && npm install && npm install -g @cyclonedx/bom && cyclonedx-bom -o ../bom.xml -a ../elixir_bom.xml && cd ..
-	./cyclonedx-cli convert --input-file bom.xml --output-file bom.json
+	cd assets/  && npm install && npm install -g @cyclonedx/bom@3.4.1 && cyclonedx-bom -o ../bom.xml && cd ..
+	./cyclonedx-cli merge --input-files ./bom.xml ./elixir_bom.xml --output-file bom-all.xml
+	./cyclonedx-cli convert --input-file bom-all.xml --output-file bom-all.json
 
 
 release: ## Build a release of the application with MIX_ENV=prod
