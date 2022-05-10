@@ -1,7 +1,7 @@
 defmodule SbomPocWeb.PagesView do
   use SbomPocWeb, :view
 
- def render("sbom.html", _params) do
+  def render("sbom.html", _params) do
     files =
       :sbom_poc
       |> Application.app_dir("/priv/static/.well-known/sbom")
@@ -27,5 +27,4 @@ defmodule SbomPocWeb.PagesView do
     regex = Regex.compile!(filter)
     files |> Enum.filter(fn file -> Regex.match?(regex, file) end)
   end
-
 end
