@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1" xmlns="http://cyclonedx.org/schema/bom/1.4">
+  <metadata>
+    <tools>
+      <tool>
+        <vendor>CycloneDX</vendor>
+        <name>Node.js module</name>
+        <version>3.4.1</version>
+        <hashes />
+      </tool>
+      <tool>
+        <name>SBoM Mix task for Elixir</name>
+        <hashes />
+      </tool>
+    </tools>
+    <component type="application">
+      <name>sbom_poc</name>
+      <version>0.6.5</version>
+    </component>
+  </metadata>
+  <components>
+    <component type="library">
+      <name>earmark_parser</name>
+      <version>1.4.18</version>
+      <description>Earmark AST the parser and AST Generator for
+Dave Thomas' Earmark.
+
+The parser generates
+an Abstract Syntax Tree from Markdown.
+
+The original Earmark will still provide the HTML Transformation and
+the CLI, however its Scanner, Parser and AST Renderer have been
+extracted into this library.</description>
+      <hashes>
+        <hash alg="SHA-256">e1b2be73eb08a49fb032a0208bf647380682374a725dfb5b9e510def8397f6f2</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/earmark_parser@1.4.18</purl>
+    </component>
+    <component type="library">
+      <name>gen_state_machine</name>
+      <version>3.0.0</version>
+      <description>An Elixir wrapper for gen_statem.</description>
+      <hashes>
+        <hash alg="SHA-256">1e57f86a494e5c6b14137ebef26a7eb342b3b0070c7135f2d6768ed3f6b6cdff</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/gen_state_machine@3.0.0</purl>
+    </component>
+    <component type="library">
+      <name>connection</name>
+      <version>1.1.0</version>
+      <description>Connection behaviour for connection processes</description>
+      <hashes>
+        <hash alg="SHA-256">ff2a49c4b75b6fb3e674bfc5536451607270aac754ffd1bdfe175abe4a6d7a68</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/connection@1.1.0</purl>
+    </component>
+    <component type="library">
+      <name>nimble_parsec</name>
+      <version>1.2.0</version>
+      <description>A simple and fast library for text-based parser combinators</description>
+      <hashes>
+        <hash alg="SHA-256">b44d75e2a6542dcb6acf5d71c32c74ca88960421b6874777f79153bbbbd7dccc</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/nimble_parsec@1.2.0</purl>
+    </component>
+    <component type="library">
+      <name>makeup</name>
+      <version>1.0.5</version>
+      <description>Syntax highlighter for source code in the style of Pygments.</description>
+      <hashes>
+        <hash alg="SHA-256">d5a830bc42c9800ce07dd97fa94669dfb93d3bf5fcf6ea7a0c67b2e0e4a7f26c</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>BSD</name>
+        </license>
+      </licenses>
+      <purl>pkg:hex/makeup@1.0.5</purl>
+    </component>
+    <component type="library">
+      <name>gettext</name>
+      <version>0.19.1</version>
+      <description>Internationalization and localization through gettext</description>
+      <hashes>
+        <hash alg="SHA-256">564953fd21f29358e68b91634799d9d26989f8d039d7512622efb3c3b1c97892</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/gettext@0.19.1</purl>
+    </component>
+    <component type="library">
+      <name>ranch</name>
+      <version>1.8.0</version>
+      <description>Socket acceptor pool for TCP protocols.</description>
+      <hashes>
+        <hash alg="SHA-256">8c7a100a139fd57f17327b6413e4167ac559fbc04ca7448e9be9057311597a1d</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>ISC</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/ranch@1.8.0</purl>
+    </component>
+    <component type="library">
+      <name>telemetry</name>
+      <version>0.4.3</version>
+      <description>Dynamic dispatching library for metrics and instrumentations</description>
+      <hashes>
+        <hash alg="SHA-256">a06428a514bdbc63293cd9a6263aad00ddeb66f608163bdec7c8995784080818</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/telemetry@0.4.3</purl>
+    </component>
+    <component type="library">
+      <name>telemetry_metrics</name>
+      <version>0.6.1</version>
+      <description>Provides a common interface for defining metrics based on Telemetry events.</description>
+      <hashes>
+        <hash alg="SHA-256">315d9163a1d4660aedc3fee73f33f1d355dcc76c5c3ab3d59e76e3edf80eef1f</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/telemetry_metrics@0.6.1</purl>
+    </component>
+    <component type="library">
+      <name>telemetry_poller</name>
+      <version>0.5.1</version>
+      <description>Periodically collect measurements and dispatch them as Telemetry events.</description>
+      <hashes>
+        <hash alg="SHA-256">21071cc2e536810bac5628b935521ff3e28f0303e770951158c73eaaa01e962a</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/telemetry_poller@0.5.1</purl>
+    </component>
+    <component type="library">
+      <name>decimal</name>
+      <version>2.0.0</version>
+      <description>Arbitrary precision decimal arithmetic.</description>
+      <hashes>
+        <hash alg="SHA-256">a78296e617b0f5dd4c6caf57c714431347912ffb1d0842e998e9792b5642d697</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/decimal@2.0.0</purl>
+    </component>
+    <component type="library">
+      <name>sbom</name>
+      <version>4d7ec60514315765abd83f0893028a8c5df99e7a</version>
+      <purl>pkg:github/voltone/sbom@4d7ec60514315765abd83f0893028a8c5df99e7a</purl>
+    </component>
+    <component type="library">
+      <name>jason</name>
+      <version>1.3.0</version>
+      <description>A blazing fast JSON parser and generator in pure Elixir.</description>
+      <hashes>
+        <hash alg="SHA-256">fa6b82a934feb176263ad2df0dbd91bf633d4a46ebfdffea0c8ae82953714946</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/jason@1.3.0</purl>
+    </component>
+    <component type="library">
+      <name>comeonin</name>
+      <version>5.3.3</version>
+      <description>A specification for password hashing libraries</description>
+      <hashes>
+        <hash alg="SHA-256">2c564dac95a35650e9b6acfe6d2952083d8a08e4a89b93a481acb552b325892e</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/comeonin@5.3.3</purl>
+    </component>
+    <component type="library">
+      <name>tortoise</name>
+      <version>0.10.0</version>
+      <description>A MQTT client for Elixir.</description>
+      <hashes>
+        <hash alg="SHA-256">d8821b9a5052355ca61d9fa784652f435997fa98b210f88565c98f3494605efd</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/tortoise@0.10.0</purl>
+    </component>
+    <component type="library">
+      <name>castore</name>
+      <version>0.1.15</version>
+      <description>Up-to-date CA certificate store.</description>
+      <hashes>
+        <hash alg="SHA-256">dbb300827d5a3ec48f396ca0b77ad47058578927e9ebe792abd99fcbc3324326</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/castore@0.1.15</purl>
+    </component>
+    <component type="library">
+      <name>esbuild</name>
+      <version>0.4.0</version>
+      <description>Mix tasks for installing and invoking esbuild</description>
+      <hashes>
+        <hash alg="SHA-256">9f17db148aead4cf1e6e6a584214357287a93407b5fb51a031f122b61385d4c2</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/esbuild@0.4.0</purl>
+    </component>
+    <component type="library">
+      <name>elixir_make</name>
+      <version>0.6.3</version>
+      <description>A Make compiler for Mix</description>
+      <hashes>
+        <hash alg="SHA-256">bc07d53221216838d79e03a8019d0839786703129599e9619f4ab74c8c096eac</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/elixir_make@0.6.3</purl>
+    </component>
+    <component type="library">
+      <name>bcrypt_elixir</name>
+      <version>3.0.0</version>
+      <description>Bcrypt password hashing algorithm for Elixir</description>
+      <hashes>
+        <hash alg="SHA-256">851d16b901b6c94a0ceadd3470f2b58d9899007bf04a42e0e4b399e2dd6ab307</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>BSD</name>
+        </license>
+      </licenses>
+      <purl>pkg:hex/bcrypt_elixir@3.0.0</purl>
+    </component>
+    <component type="library">
+      <name>earmark</name>
+      <version>1.4.19</version>
+      <description>Earmark is a pure-Elixir Markdown converter.
+
+It is intended to be used as a library (just call Earmark.as_html),
+but can also be used as a command-line tool (run mix escript.build
+first).
+
+Output generation is pluggable.</description>
+      <hashes>
+        <hash alg="SHA-256">3854a17305c880cc46305af15fb1630568d23a709aba21aaa996ced082fc29d7</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/earmark@1.4.19</purl>
+    </component>
+    <component type="library">
+      <name>db_connection</name>
+      <version>2.4.2</version>
+      <description>Database connection behaviour for database transactions and connection pooling</description>
+      <hashes>
+        <hash alg="SHA-256">f92e79aff2375299a16bcb069a14ee8615c3414863a6fef93156aee8e86c2ff3</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/db_connection@2.4.2</purl>
+    </component>
+    <component type="library">
+      <name>ecto</name>
+      <version>3.8.1</version>
+      <description>A toolkit for data mapping and language integrated query for Elixir</description>
+      <hashes>
+        <hash alg="SHA-256">35e0bd8c8eb772e14a5191a538cd079706ecb45164ea08a7523b4fc69ab70f56</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/ecto@3.8.1</purl>
+    </component>
+    <component type="library">
+      <name>makeup_elixir</name>
+      <version>0.15.2</version>
+      <description>Elixir lexer for the Makeup syntax highlighter.</description>
+      <hashes>
+        <hash alg="SHA-256">dc72dfe17eb240552857465cc00cce390960d9a0c055c4ccd38b70629227e97c</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>BSD</name>
+        </license>
+      </licenses>
+      <purl>pkg:hex/makeup_elixir@0.15.2</purl>
+    </component>
+    <component type="library">
+      <name>nimble_publisher</name>
+      <version>0.1.2</version>
+      <description>A minimal filesystem-based publishing engine with Markdown support and code highlighting</description>
+      <hashes>
+        <hash alg="SHA-256">5f6386b2d503be6acb8136a6b5b0e0494bc25095ebe4166f6838fb0d6396b51a</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/nimble_publisher@0.1.2</purl>
+    </component>
+    <component type="library">
+      <name>phoenix_pubsub</name>
+      <version>2.1.1</version>
+      <description>Distributed PubSub and Presence platform</description>
+      <hashes>
+        <hash alg="SHA-256">ba04e489ef03763bf28a17eb2eaddc2c20c6d217e2150a61e3298b0f4c2012b5</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/phoenix_pubsub@2.1.1</purl>
+    </component>
+    <component type="library">
+      <name>cowlib</name>
+      <version>2.11.0</version>
+      <description>Support library for manipulating Web protocols.</description>
+      <hashes>
+        <hash alg="SHA-256">0b9ff9c346629256c42ebe1eeb769a83c6cb771a6ee5960bd110ab0b9b872063</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>ISC</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/cowlib@2.11.0</purl>
+    </component>
+    <component type="library">
+      <name>cowboy</name>
+      <version>2.9.0</version>
+      <description>Small, fast, modern HTTP server.</description>
+      <hashes>
+        <hash alg="SHA-256">865dd8b6607e14cf03282e10e934023a1bd8be6f6bacf921a7e2a96d800cd452</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>ISC</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/cowboy@2.9.0</purl>
+    </component>
+    <component type="library">
+      <name>cowboy_telemetry</name>
+      <version>0.3.1</version>
+      <description>Telemetry instrumentation for Cowboy</description>
+      <hashes>
+        <hash alg="SHA-256">ebd1a1d7aff97f27c66654e78ece187abdc646992714164380d8a041eda16754</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/cowboy_telemetry@0.3.1</purl>
+    </component>
+    <component type="library">
+      <name>mime</name>
+      <version>2.0.2</version>
+      <description>A MIME type module for Elixir</description>
+      <hashes>
+        <hash alg="SHA-256">0b9e1a4c840eafb68d820b0e2158ef5c49385d17fb36855ac6e7e087d4b1dcc5</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/mime@2.0.2</purl>
+    </component>
+    <component type="library">
+      <name>postgrex</name>
+      <version>0.16.3</version>
+      <description>PostgreSQL driver for Elixir</description>
+      <hashes>
+        <hash alg="SHA-256">fac79a81a9a234b11c44235a4494d8565303fa4b9147acf57e48978a074971db</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/postgrex@0.16.3</purl>
+    </component>
+    <component type="library">
+      <name>ecto_sql</name>
+      <version>3.8.1</version>
+      <description>SQL-based adapters for Ecto and database migrations</description>
+      <hashes>
+        <hash alg="SHA-256">1acaaba32ca0551fd19e492fc7c80414e72fc1a7140fc9395aaa53c2e8629798</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/ecto_sql@3.8.1</purl>
+    </component>
+    <component type="library">
+      <name>plug_crypto</name>
+      <version>1.2.2</version>
+      <description>Crypto-related functionality for the web</description>
+      <hashes>
+        <hash alg="SHA-256">05654514ac717ff3a1843204b424477d9e60c143406aa94daf2274fdd280794d</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/plug_crypto@1.2.2</purl>
+    </component>
+    <component type="library">
+      <name>plug</name>
+      <version>1.13.6</version>
+      <description>Compose web applications with functions</description>
+      <hashes>
+        <hash alg="SHA-256">187beb6b67c6cec50503e940f0434ea4692b19384d47e5fdfd701e93cadb4cc2</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <cpe>cpe:2.3:a:elixir-plug:plug:1.13.6:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:hex/plug@1.13.6</purl>
+    </component>
+    <component type="library">
+      <name>phoenix_html</name>
+      <version>3.2.0</version>
+      <description>Phoenix view functions for working with HTML templates</description>
+      <hashes>
+        <hash alg="SHA-256">1c1219d4b6cb22ac72f12f73dc5fad6c7563104d083f711c3fcd8551a1f4ae11</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/phoenix_html@3.2.0</purl>
+    </component>
+    <component type="library">
+      <name>phoenix_view</name>
+      <version>1.1.2</version>
+      <description>Views and template rendering for Phoenix</description>
+      <hashes>
+        <hash alg="SHA-256">1b82764a065fb41051637872c7bd07ed2fdb6f5c3bd89684d4dca6e10115c95a</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/phoenix_view@1.1.2</purl>
+    </component>
+    <component type="library">
+      <name>plug_cowboy</name>
+      <version>2.5.2</version>
+      <description>A Plug adapter for Cowboy</description>
+      <hashes>
+        <hash alg="SHA-256">62894ccd601cf9597e2c23911ff12798a8a18d237e9739f58a6b04e4988899fe</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/plug_cowboy@2.5.2</purl>
+    </component>
+    <component type="library">
+      <name>phoenix</name>
+      <version>1.6.7</version>
+      <description>Productive. Reliable. Fast. A productive web framework that
+does not compromise speed or maintainability.</description>
+      <hashes>
+        <hash alg="SHA-256">f1de32418bbbcd471f4fe74d3860ee9c8e8c6c36a0ec173be8ff468a5d72ac90</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <cpe>cpe:2.3:a:phoenixframework:phoenix:1.6.7:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:hex/phoenix@1.6.7</purl>
+    </component>
+    <component type="library">
+      <name>phoenix_live_view</name>
+      <version>0.16.4</version>
+      <description>Rich, real-time user experiences with server-rendered HTML</description>
+      <hashes>
+        <hash alg="SHA-256">5692edd0bac247a9a816eee7394e32e7a764959c7d0cf9190662fc8b0cd24c97</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/phoenix_live_view@0.16.4</purl>
+    </component>
+    <component type="library">
+      <name>phoenix_live_dashboard</name>
+      <version>0.5.3</version>
+      <description>Real-time performance dashboard for Phoenix</description>
+      <hashes>
+        <hash alg="SHA-256">ff153c46aee237dd7244f07e9b98d557fe0d1de7a5916438e634c3be2d13c607</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/phoenix_live_dashboard@0.5.3</purl>
+    </component>
+    <component type="library">
+      <name>phoenix_ecto</name>
+      <version>4.4.0</version>
+      <description>Integration between Phoenix &amp; Ecto</description>
+      <hashes>
+        <hash alg="SHA-256">0672ed4e4808b3fbed494dded89958e22fb882de47a97634c0b13e7b0b5f7720</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <purl>pkg:hex/phoenix_ecto@4.4.0</purl>
+    </component>
+  </components>
+</bom>
