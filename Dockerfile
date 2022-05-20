@@ -29,6 +29,7 @@ COPY assets ./assets
 COPY config ./config
 COPY lib ./lib
 COPY priv ./priv
+COPY Makefile ./Makefile
 
 
 RUN make sbom
