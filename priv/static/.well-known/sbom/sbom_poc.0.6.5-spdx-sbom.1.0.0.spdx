@@ -1,0 +1,887 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "spdxVersion": "SPDX-2.2",
+  "creationInfo": {
+    "comment": "This SPDX document has been converted from CycloneDX format.",
+    "created": "2022-05-10T12:27:37.279859Z",
+    "creators": [
+      "Tool: Node.js module-3.4.1",
+      "Tool: SBoM Mix task for Elixir-"
+    ]
+  },
+  "name": "sbom_poc-0.6.5",
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "http://spdx.org/spdxdocs/sbom_poc-0.6.5-73a7b118-586b-4861-8556-a2691ef99aab",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e1b2be73eb08a49fb032a0208bf647380682374a725dfb5b9e510def8397f6f2"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Earmark AST the parser and AST Generator for\nDave Thomas\u0027 Earmark.\n\nThe parser generates\nan Abstract Syntax Tree from Markdown.\n\nThe original Earmark will still provide the HTML Transformation and\nthe CLI, however its Scanner, Parser and AST Renderer have been\nextracted into this library.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "earmark_parser",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.4.18"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1e57f86a494e5c6b14137ebef26a7eb342b3b0070c7135f2d6768ed3f6b6cdff"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "An Elixir wrapper for gen_statem.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "gen_state_machine",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "3.0.0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ff2a49c4b75b6fb3e674bfc5536451607270aac754ffd1bdfe175abe4a6d7a68"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Connection behaviour for connection processes",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "connection",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.1.0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-4",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b44d75e2a6542dcb6acf5d71c32c74ca88960421b6874777f79153bbbbd7dccc"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "A simple and fast library for text-based parser combinators",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "nimble_parsec",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.2.0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-5",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d5a830bc42c9800ce07dd97fa94669dfb93d3bf5fcf6ea7a0c67b2e0e4a7f26c"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Syntax highlighter for source code in the style of Pygments.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "makeup",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.0.5"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-6",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "564953fd21f29358e68b91634799d9d26989f8d039d7512622efb3c3b1c97892"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Internationalization and localization through gettext",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "gettext",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "0.19.1"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-7",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8c7a100a139fd57f17327b6413e4167ac559fbc04ca7448e9be9057311597a1d"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Socket acceptor pool for TCP protocols.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "ISC",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "ranch",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.8.0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-8",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a06428a514bdbc63293cd9a6263aad00ddeb66f608163bdec7c8995784080818"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Dynamic dispatching library for metrics and instrumentations",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "telemetry",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "0.4.3"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-9",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "315d9163a1d4660aedc3fee73f33f1d355dcc76c5c3ab3d59e76e3edf80eef1f"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Provides a common interface for defining metrics based on Telemetry events.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "telemetry_metrics",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "0.6.1"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-10",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "21071cc2e536810bac5628b935521ff3e28f0303e770951158c73eaaa01e962a"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Periodically collect measurements and dispatch them as Telemetry events.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "telemetry_poller",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "0.5.1"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-11",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a78296e617b0f5dd4c6caf57c714431347912ffb1d0842e998e9792b5642d697"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Arbitrary precision decimal arithmetic.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "decimal",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "2.0.0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-12",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "sbom",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "4d7ec60514315765abd83f0893028a8c5df99e7a"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-13",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fa6b82a934feb176263ad2df0dbd91bf633d4a46ebfdffea0c8ae82953714946"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "A blazing fast JSON parser and generator in pure Elixir.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "jason",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.3.0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-14",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2c564dac95a35650e9b6acfe6d2952083d8a08e4a89b93a481acb552b325892e"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "A specification for password hashing libraries",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "comeonin",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "5.3.3"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-15",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d8821b9a5052355ca61d9fa784652f435997fa98b210f88565c98f3494605efd"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "A MQTT client for Elixir.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "tortoise",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "0.10.0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-16",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "dbb300827d5a3ec48f396ca0b77ad47058578927e9ebe792abd99fcbc3324326"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Up-to-date CA certificate store.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "castore",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "0.1.15"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-17",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9f17db148aead4cf1e6e6a584214357287a93407b5fb51a031f122b61385d4c2"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Mix tasks for installing and invoking esbuild",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "esbuild",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "0.4.0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-18",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bc07d53221216838d79e03a8019d0839786703129599e9619f4ab74c8c096eac"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "A Make compiler for Mix",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "elixir_make",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "0.6.3"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-19",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "851d16b901b6c94a0ceadd3470f2b58d9899007bf04a42e0e4b399e2dd6ab307"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Bcrypt password hashing algorithm for Elixir",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "bcrypt_elixir",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "3.0.0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-20",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3854a17305c880cc46305af15fb1630568d23a709aba21aaa996ced082fc29d7"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Earmark is a pure-Elixir Markdown converter.\n\nIt is intended to be used as a library (just call Earmark.as_html),\nbut can also be used as a command-line tool (run mix escript.build\nfirst).\n\nOutput generation is pluggable.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "earmark",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.4.19"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-21",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f92e79aff2375299a16bcb069a14ee8615c3414863a6fef93156aee8e86c2ff3"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Database connection behaviour for database transactions and connection pooling",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "db_connection",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "2.4.2"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-22",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "35e0bd8c8eb772e14a5191a538cd079706ecb45164ea08a7523b4fc69ab70f56"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "A toolkit for data mapping and language integrated query for Elixir",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "ecto",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "3.8.1"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-23",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "dc72dfe17eb240552857465cc00cce390960d9a0c055c4ccd38b70629227e97c"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Elixir lexer for the Makeup syntax highlighter.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "makeup_elixir",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "0.15.2"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-24",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5f6386b2d503be6acb8136a6b5b0e0494bc25095ebe4166f6838fb0d6396b51a"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "A minimal filesystem-based publishing engine with Markdown support and code highlighting",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "nimble_publisher",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "0.1.2"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-25",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ba04e489ef03763bf28a17eb2eaddc2c20c6d217e2150a61e3298b0f4c2012b5"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Distributed PubSub and Presence platform",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "phoenix_pubsub",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "2.1.1"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-26",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0b9ff9c346629256c42ebe1eeb769a83c6cb771a6ee5960bd110ab0b9b872063"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Support library for manipulating Web protocols.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "ISC",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "cowlib",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "2.11.0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-27",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "865dd8b6607e14cf03282e10e934023a1bd8be6f6bacf921a7e2a96d800cd452"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Small, fast, modern HTTP server.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "ISC",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "cowboy",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "2.9.0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-28",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ebd1a1d7aff97f27c66654e78ece187abdc646992714164380d8a041eda16754"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Telemetry instrumentation for Cowboy",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "cowboy_telemetry",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "0.3.1"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-29",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0b9e1a4c840eafb68d820b0e2158ef5c49385d17fb36855ac6e7e087d4b1dcc5"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "A MIME type module for Elixir",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "mime",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "2.0.2"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-30",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fac79a81a9a234b11c44235a4494d8565303fa4b9147acf57e48978a074971db"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "PostgreSQL driver for Elixir",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "postgrex",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "0.16.3"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-31",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1acaaba32ca0551fd19e492fc7c80414e72fc1a7140fc9395aaa53c2e8629798"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "SQL-based adapters for Ecto and database migrations",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "ecto_sql",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "3.8.1"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-32",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "05654514ac717ff3a1843204b424477d9e60c143406aa94daf2274fdd280794d"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Crypto-related functionality for the web",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "plug_crypto",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.2.2"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-33",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "187beb6b67c6cec50503e940f0434ea4692b19384d47e5fdfd701e93cadb4cc2"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Compose web applications with functions",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "plug",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.13.6"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-34",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1c1219d4b6cb22ac72f12f73dc5fad6c7563104d083f711c3fcd8551a1f4ae11"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Phoenix view functions for working with HTML templates",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "phoenix_html",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "3.2.0"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-35",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1b82764a065fb41051637872c7bd07ed2fdb6f5c3bd89684d4dca6e10115c95a"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Views and template rendering for Phoenix",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "phoenix_view",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.1.2"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-36",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "62894ccd601cf9597e2c23911ff12798a8a18d237e9739f58a6b04e4988899fe"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "A Plug adapter for Cowboy",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "plug_cowboy",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "2.5.2"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-37",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f1de32418bbbcd471f4fe74d3860ee9c8e8c6c36a0ec173be8ff468a5d72ac90"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Productive. Reliable. Fast. A productive web framework that\ndoes not compromise speed or maintainability.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "phoenix",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.6.7"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-38",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5692edd0bac247a9a816eee7394e32e7a764959c7d0cf9190662fc8b0cd24c97"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Rich, real-time user experiences with server-rendered HTML",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "phoenix_live_view",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "0.16.4"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-39",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ff153c46aee237dd7244f07e9b98d557fe0d1de7a5916438e634c3be2d13c607"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Real-time performance dashboard for Phoenix",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "phoenix_live_dashboard",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "0.5.3"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-40",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0672ed4e4808b3fbed494dded89958e22fb882de47a97634c0b13e7b0b5f7720"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Integration between Phoenix \u0026 Ecto",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "phoenix_ecto",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "4.4.0"
+    }
+  ]
+}
