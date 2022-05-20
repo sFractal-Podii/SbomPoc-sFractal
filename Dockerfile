@@ -3,7 +3,7 @@
 FROM elixir:1.11.2 AS app_builder
 
 ARG env=prod
-ARG cyclonedx_cli_version=v0.22.0
+ARG cyclonedx_cli_version=v0.24.0
 
 ENV LANG=C.UTF-8 \
    TERM=xterm \
@@ -18,8 +18,10 @@ RUN curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | 
 
 COPY mix.exs .
 COPY mix.lock .
+
 RUN apt-get --allow-releaseinfo-change update && apt-get install curl make  gcc -y 
-RUN apt-get install -y nodejs
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - && \
+    apt-get install -y nodejs
 RUN mix deps.get && mix deps.compile
 
 # Compile assets
