@@ -19,6 +19,7 @@ RUN curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | 
 COPY mix.exs .
 COPY mix.lock .
 RUN apt-get --allow-releaseinfo-change update && apt-get install curl make  gcc -y 
+RUN apt-get install -y nodejs
 RUN mix deps.get && mix deps.compile
 
 # Compile assets
