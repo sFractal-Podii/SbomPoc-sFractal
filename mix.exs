@@ -7,7 +7,7 @@ defmodule SbomPoc.MixProject do
       version: "0.7.2",
       elixir: "~> 1.11.2",
       elixirc_paths: elixirc_paths(Mix.env()),
-      compilers: [:phoenix, :gettext] ++ Mix.compilers(),
+      compilers: [:phoenix] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
       deps: deps(),
