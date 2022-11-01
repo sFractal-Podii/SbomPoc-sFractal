@@ -1,5 +1,5 @@
 {
   "devDependencies": {
-    "@cyclonedx/bom": "^3.10.6"
+    "@cyclonedx/bom": "^4.0.2"
   }
 }
