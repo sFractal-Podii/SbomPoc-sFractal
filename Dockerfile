@@ -1,6 +1,6 @@
 # heavily borrowed from https://elixirforum.com/t/cannot-find-libtinfo-so-6-when-launching-elixir-app/24101/11?u=sigu
 # FROM  hexpm/elixir:1.11.2-erlang-22.3-debian-buster-20200224  AS app_builder
-FROM elixir:1.11.2 AS app_builder
+FROM elixir:1.14 AS app_builder
 
 ARG env=prod
 ARG cyclonedx_cli_version=v0.24.0
