@@ -28,13 +28,13 @@ defmodule SbomPoc.Mqtt.Handler do
 
   @impl true
   def connection(:down, state) do
-    Logger.warn("Connection has been dropped")
+    Logger.warning("Connection has been dropped")
     {:ok, state}
   end
 
   @impl true
   def connection(:terminated, state) do
-    Logger.warn("Connection has been terminated")
+    Logger.warning("Connection has been terminated")
     {:ok, state}
   end
 
@@ -46,7 +46,7 @@ defmodule SbomPoc.Mqtt.Handler do
 
   @impl true
   def subscription({:warn, [requested: req, accepted: qos]}, topic, state) do
-    Logger.warn("Subscribed to #{topic}; requested #{req} but got accepted with QoS #{qos}")
+    Logger.warning("Subscribed to #{topic}; requested #{req} but got accepted with QoS #{qos}")
     {:ok, state}
   end
 
@@ -73,7 +73,7 @@ defmodule SbomPoc.Mqtt.Handler do
 
   @impl true
   def terminate(reason, _state) do
-    Logger.warn("Client has been terminated with reason: #{inspect(reason)}")
+    Logger.warning("Client has been terminated with reason: #{inspect(reason)}")
     :ok
   end
 

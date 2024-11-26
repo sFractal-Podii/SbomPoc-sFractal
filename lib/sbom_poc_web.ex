@@ -45,7 +45,7 @@ defmodule SbomPocWeb do
   def live_view do
     quote do
       use Phoenix.LiveView,
-        layout: {SbomPocWeb.LayoutView, "live.html"}
+        layout: {SbomPocWeb.LayoutView, :live}
 
       unquote(view_helpers())
     end
@@ -83,6 +83,7 @@ defmodule SbomPocWeb do
 
       # Import LiveView helpers (live_render, live_component, live_patch, etc)
       import Phoenix.LiveView.Helpers
+      import Phoenix.Component
 
       # Import basic rendering functionality (render, render_layout, etc)
       import Phoenix.View

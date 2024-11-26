@@ -12,7 +12,7 @@ defmodule SbomPocWeb.HomeLive do
 
   @impl true
   def render(assigns) do
-    ~L"""
+    ~H"""
     action item - replace phoenic logo
     with plugfest logo
     <h1>Home page </h1>
