@@ -20,9 +20,9 @@ defmodule SbomPocWeb do
   def controller do
     quote do
       use Phoenix.Controller, namespace: SbomPocWeb
+      use Gettext, backend: SbomPocWeb.Gettext
 
       import Plug.Conn
-      import SbomPocWeb.Gettext
       alias SbomPocWeb.Router.Helpers, as: Routes
     end
   end
@@ -72,7 +72,7 @@ defmodule SbomPocWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import SbomPocWeb.Gettext
+      use Gettext, backend: SbomPocWeb.Gettext
     end
   end
 
@@ -81,15 +81,17 @@ defmodule SbomPocWeb do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
+      use Gettext, backend: SbomPocWeb.Gettext
+
       # Import LiveView helpers (live_render, live_component, live_patch, etc)
       import Phoenix.LiveView.Helpers
       import Phoenix.Component
+      import Phoenix.Flash
 
       # Import basic rendering functionality (render, render_layout, etc)
       import Phoenix.View
 
       import SbomPocWeb.ErrorHelpers
-      import SbomPocWeb.Gettext
       alias SbomPocWeb.Router.Helpers, as: Routes
     end
   end
