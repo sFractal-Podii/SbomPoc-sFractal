@@ -37,7 +37,7 @@ jobs:
       with:
         elixir-version: '1.17.3' # Define the elixir version [required]
         otp-version: '27.1.2' # Define the OTP version [required]
-        experimental-otp: true #https://github.com/actions/setup-elixir/issues/49
+        # experimental-otp: true #https://github.com/actions/setup-elixir/issues/49
     - name: Restore dependencies cache
       uses: actions/cache@v2
       with:
