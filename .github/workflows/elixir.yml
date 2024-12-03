@@ -54,3 +54,5 @@ jobs:
           PASSWORD: fest
       - name: Check lints
         run: make lint
+      - name: ensure image an build
+        run: make docker-image
