@@ -11,54 +11,55 @@ on:
       - develop
 
 jobs:
-  build:
-    name: Build and test
+  linting:
+    name: Linting and Testing
     runs-on: ubuntu-24.04
-
     services:
       db:
+        image: postgres:11
         env:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
           POSTGRES_DB: postgres
-        image: postgres:11
-        ports: ["5432:5432"]
+        ports:
+          - "5432:5432"
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
           --health-timeout 5s
           --health-retries 5
-    jobs:
-      linting:
-        steps:
-          - uses: actions/checkout@v4
-          - name: Set up Elixir
-            uses: erlef/setup-beam@v1
-            with:
-              elixir-version: "1.17.3" # Define the elixir version [required]
-              otp-version: "27.0" # Define the OTP version [required]
-          - name: Restore dependencies cache
-            uses: actions/cache@v4
-            with:
-              path: deps
-              key: ${{ runner.os }}-mix-${{ hashFiles('**/mix.lock') }}
-              restore-keys: ${{ runner.os }}-mix-
-          - name: Install dependencies
-            run: mix deps.get
-          - name: Run tests
-            run: mix test
-            env:
-              CLIENT_ID: :sfractal2020
-              MQTT_HOST: mqtt.sfractal.com
-              MQTT_PORT: 1883
-              USER_NAME: plug
-              PASSWORD: fest
-          - name: Check lints
-            run: make lint
-      docker-image:
-        steps:
-          - uses: actions/checkout@v4
-          - name: install prerequisites
-            run: apt-get install build-essential -y
-          - name: ensure image an build
-            run: make docker-image
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Elixir
+        uses: erlef/setup-beam@v1
+        with:
+          elixir-version: "1.17.3" # Define the elixir version [required]
+          otp-version: "27.0" # Define the OTP version [required]
+      - name: Restore dependencies cache
+        uses: actions/cache@v4
+        with:
+          path: deps
+          key: ${{ runner.os }}-mix-${{ hashFiles('**/mix.lock') }}
+          restore-keys: ${{ runner.os }}-mix-
+      - name: Install dependencies
+        run: mix deps.get
+      - name: Run tests
+        run: mix test
+        env:
+          CLIENT_ID: sfractal2020
+          MQTT_HOST: mqtt.sfractal.com
+          MQTT_PORT: 1883
+          USER_NAME: plug
+          PASSWORD: fest
+      - name: Check lints
+        run: make lint
+
+  docker-image:
+    name: Build Docker Image
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install prerequisites
+        run: sudo apt-get update && sudo apt-get install build-essential -y
+      - name: Build Docker Image
+        run: make docker-image
