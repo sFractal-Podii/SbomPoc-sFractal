@@ -14,7 +14,7 @@ defmodule SbomPocWeb.EventsLive do
 
   @impl true
   def render(assigns) do
-    ~L"""
+    ~H"""
     <h1>Events page view </h1>
     <%= if Enum.empty? @events do %>
     <h2> No events yet </h2>
@@ -32,7 +32,7 @@ defmodule SbomPocWeb.EventsLive do
         <tr>
         <td><%= time %></td>
         <td><%= details.topic %></td>
-        <td phx-hook="PrettyPrint">
+        <td id="topic-message" phx-hook="PrettyPrint">
           <%= raw details.message  %>
         </td>
         </tr>

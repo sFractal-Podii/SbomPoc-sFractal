@@ -1,6 +1,5 @@
 # heavily borrowed from https://elixirforum.com/t/cannot-find-libtinfo-so-6-when-launching-elixir-app/24101/11?u=sigu
-# FROM  hexpm/elixir:1.11.2-erlang-22.3-debian-buster-20200224  AS app_builder
-FROM elixir:1.11.2 AS app_builder
+FROM hexpm/elixir:1.17.3-erlang-27.0.1-debian-bullseye-20241202 AS app_builder
 
 ARG env=prod
 ARG cyclonedx_cli_version=v0.24.0
@@ -12,6 +11,7 @@ ENV LANG=C.UTF-8 \
 RUN mkdir /opt/release
 WORKDIR /opt/release
 
+RUN apt-get --allow-releaseinfo-change update && apt-get install curl git make gcc libicu67 -y
 RUN mix local.hex --force && mix local.rebar --force
 RUN curl -L  https://github.com/CycloneDX/cyclonedx-cli/releases/download/$cyclonedx_cli_version/cyclonedx-linux-x64 --output cyclonedx-cli && chmod a+x cyclonedx-cli
 RUN curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
@@ -19,9 +19,6 @@ RUN curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | 
 COPY mix.exs .
 COPY mix.lock .
 
-RUN apt-get --allow-releaseinfo-change update && apt-get install curl make  gcc -y 
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - && \
-    apt-get install -y nodejs
 RUN mix deps.get && mix deps.compile
 
 # Compile assets
@@ -37,16 +34,16 @@ COPY Makefile ./Makefile
 
 RUN make sbom
 # make sbom for the production docker image
-RUN syft debian:buster-slim -o spdx > debian.buster_slim-spdx-bom.spdx
-RUN syft debian:buster-slim -o spdx-json > debian.buster_slim-spdx-bom.json
-RUN syft debian:buster-slim -o cyclonedx-json > debian.buster_slim-cyclonedx-bom.json
-RUN syft debian:buster-slim -o cyclonedx > debian.buster_slim-cyclonedx-bom.xml
-# copy the debian boms
-RUN cp *bom* ./priv/static/.well-known/sbom/
+RUN syft debian:buster-slim -o spdx > debian.buster_slim-spdx-bom.spdx \
+   && syft debian:buster-slim -o spdx-json > debian.buster_slim-spdx-bom.json \
+   && syft debian:buster-slim -o cyclonedx-json > debian.buster_slim-cyclonedx-bom.json \
+   && syft debian:buster-slim -o cyclonedx > debian.buster_slim-cyclonedx-bom.xml \
+   && cp *bom* ./priv/static/.well-known/sbom/
 
 # now make the release
-RUN mix assets.deploy
-RUN mix release
+RUN mix assets.deploy &&  mix release
+
+# This is our final image that we ship to production
 FROM debian:buster-slim AS app
 
 ARG CLIENT_ID=:sbompoc
