@@ -11,7 +11,7 @@ ENV LANG=C.UTF-8 \
 RUN mkdir /opt/release
 WORKDIR /opt/release
 
-RUN apt-get --allow-releaseinfo-change update && apt-get install curl git make gcc -y 
+RUN apt-get --allow-releaseinfo-change update && apt-get install curl git make gcc libicu67 -y
 RUN mix local.hex --force && mix local.rebar --force
 RUN curl -L  https://github.com/CycloneDX/cyclonedx-cli/releases/download/$cyclonedx_cli_version/cyclonedx-linux-x64 --output cyclonedx-cli && chmod a+x cyclonedx-cli
 RUN curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
