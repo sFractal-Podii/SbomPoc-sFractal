@@ -49,6 +49,7 @@ defmodule SbomPoc.MixProject do
       {:floki, ">= 0.0.0", only: :test},
       {:phoenix_view, "~> 2.0"},
       {:phoenix_html, "~> 4.2"},
+      {:phoenix_html_helpers, "~> 1.0"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:phoenix_live_dashboard, "~> 0.8.5"},
       {:telemetry, "~> 0.4"},
