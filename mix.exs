@@ -45,7 +45,7 @@ defmodule SbomPoc.MixProject do
       {:ecto, "~> 3.7"},
       {:ecto_sql, "~> 3.7"},
       {:postgrex, ">= 0.0.0"},
-      {:phoenix_live_view, "~> 0.19"},
+      {:phoenix_live_view, "~> 1.0"},
       {:floki, ">= 0.0.0", only: :test},
       {:phoenix_view, "~> 2.0"},
       {:phoenix_html, "~> 3.0"},
