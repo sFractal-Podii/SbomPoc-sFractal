@@ -55,7 +55,7 @@ defmodule SbomPoc.MixProject do
       {:telemetry, "~> 0.4"},
       {:telemetry_metrics, "~> 1.1"},
       {:telemetry_poller, "~> 0.5"},
-      {:gettext, "~> 0.11"},
+      {:gettext, "~> 1.0"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:credo, "~> 1.4", only: [:dev, :test], runtime: false},
